@@ -1,0 +1,12 @@
+﻿
+*** Variables ***
+# search page
+${GMAIL_NEXT_BUTTON_XPATH}  identifier
+
+${GMAIL_LOGIN_INPUT_XPATH}    //*[@id="identifierNext"]
+
+${GMAIL_PASSWORD_INPUT_XPATH}  //input[@type='password']
+
+${GMAIL_NEXT_INPUT_XPATH}  //*[@id="passwordNext"]
+
+

@@ -1,0 +1,16 @@
+*** Settings ***
+Resource                          ../variables/variable.txt
+Resource                          ../locators/locators.txt
+
+*** Keywords ***
+Open gmail by chrome
+    Open Browser    ${URL}    ${BROWSER}
+
+Log in gmail
+    [Timeout]                   60s
+    [Arguments]    ${identifier}    ${password}
+    Input Text    ${GMAIL_NEXT_BUTTON_XPATH}    ${identifier}
+    Click Element    ${GMAIL_LOGIN_INPUT_XPATH}
+    Sleep    3s    
+    Input Text    ${GMAIL_PASSWORD_INPUT_XPATH}      ${password}
+    Click Element   ${GMAIL_NEXT_INPUT_XPATH}

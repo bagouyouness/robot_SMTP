@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190506 16:32:27.537" generator="Robot 3.1.1 (Python 2.7.8 on win32)">
+<suite source="C:\Users\ybagou\eclipse_workspace_wordline\project" id="s1" name="Project">
+<suite source="C:\Users\ybagou\eclipse_workspace_wordline\project\cases" id="s1-s1" name="Cases">
+<suite source="C:\Users\ybagou\eclipse_workspace_wordline\project\cases\test_suite.robot" id="s1-s1-s1" name="Test Suite">
+<test id="s1-s1-s1-t1" name="authentification gmail">
+<kw name="Open gmail by chrome" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190506 16:32:27.722" level="INFO">Opening browser 'chrome' to base url 'https://www.gmail.com'.</msg>
+<status status="PASS" endtime="20190506 16:32:35.275" starttime="20190506 16:32:27.721"></status>
+</kw>
+<status status="PASS" endtime="20190506 16:32:35.276" starttime="20190506 16:32:27.720"></status>
+</kw>
+<kw name="Log in gmail" library="keyword">
+<arguments>
+<arg>${identifier}</arg>
+<arg>${password}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${GMAIL_NEXT_BUTTON_XPATH}</arg>
+<arg>${identifier}</arg>
+</arguments>
+<msg timestamp="20190506 16:32:35.279" level="INFO">Typing text 'bagou.youness@gmail.com' into text field 'identifier'.</msg>
+<status status="PASS" endtime="20190506 16:32:35.452" starttime="20190506 16:32:35.277"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${GMAIL_LOGIN_INPUT_XPATH}</arg>
+</arguments>
+<msg timestamp="20190506 16:32:35.453" level="INFO">Clicking element '//*[@id="identifierNext"]'.</msg>
+<status status="PASS" endtime="20190506 16:32:35.578" starttime="20190506 16:32:35.452"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20190506 16:32:38.579" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20190506 16:32:38.579" starttime="20190506 16:32:35.578"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${GMAIL_PASSWORD_INPUT_XPATH}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190506 16:32:38.580" level="INFO">Typing text 'bagou0610209320youness' into text field '//input[@type='password']'.</msg>
+<status status="PASS" endtime="20190506 16:32:38.765" starttime="20190506 16:32:38.579"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${GMAIL_NEXT_INPUT_XPATH}</arg>
+</arguments>
+<msg timestamp="20190506 16:32:38.766" level="INFO">Clicking element '//*[@id="passwordNext"]'.</msg>
+<status status="PASS" endtime="20190506 16:32:38.844" starttime="20190506 16:32:38.766"></status>
+</kw>
+<timeout value="1 minute"></timeout>
+<status status="PASS" endtime="20190506 16:32:38.844" starttime="20190506 16:32:35.276"></status>
+</kw>
+<timeout value="40 seconds"></timeout>
+<status status="PASS" endtime="20190506 16:32:38.844" critical="yes" starttime="20190506 16:32:27.719"></status>
+</test>
+<doc>test authentification gmail</doc>
+<status status="PASS" endtime="20190506 16:32:38.845" starttime="20190506 16:32:27.589"></status>
+</suite>
+<status status="PASS" endtime="20190506 16:32:38.847" starttime="20190506 16:32:27.587"></status>
+</suite>
+<status status="PASS" endtime="20190506 16:32:38.848" starttime="20190506 16:32:27.570"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Project" pass="1">Project</stat>
+<stat fail="0" id="s1-s1" name="Cases" pass="1">Project.Cases</stat>
+<stat fail="0" id="s1-s1-s1" name="Test Suite" pass="1">Project.Cases.Test Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

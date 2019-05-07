@@ -1,0 +1,10 @@
+*** Variables ***
+### metier
+# search page
+${URL}          https://www.gmail.com      
+${BROWSER}         chrome     
+
+${identifier}  bagou.youness@gmail.com
+${password}    bagou0610209320youness
+                                              
+
